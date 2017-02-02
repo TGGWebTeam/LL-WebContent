@@ -1,0 +1,162 @@
+<!-- Lakeland bakeware recipe PAGE -->
+<div class="lklnd">
+    <section class="fullwidth">
+        <section class="page ll-ovenware-recipe">
+            <section class="page-content">
+                <section class="container">
+                    <h1>Browse Lakeland Ovenware</h1>
+                    <div class="heading-section">
+                        <h2>Recipe ideas using our Lakeland ovenware</h2>
+                    </div>
+                    <div class="slider multiple-items" id="lakeland-ovenware-recipe">
+                        <div>
+                            <section class="pos-relative">
+                                <img class="img-responsive" src="/cs/groups/public/documents/graphic/ll-bakeware-r-panel1.jpg" alt="">
+                                <article class="sub fullwidth bg-white-trans">
+                                    <p>Garlic &amp; Ginger Butter-Basted Roast Chicken</p>
+                                    <p>made with our <strong><a href="#">Standard Roasting Tin</a></strong></p>
+                                </article>
+                            </section>
+                        </div>
+                        <div>
+                            <section class="pos-relative">
+                                <img class="img-responsive" src="/cs/groups/public/documents/graphic/ll-bakeware-r-panel2.jpg" alt="">
+                                <article class="sub fullwidth bg-white-trans">
+                                    <p>Margherita Pizza with Quinoa Crust</p>
+                                    <p>made with our <strong><a href="#">Pizza Crisper</a></strong></p>
+                                </article>
+                            </section>
+                        </div>
+                        <div>
+                            <section class="pos-relative">
+                                <img class="img-responsive" src="/cs/groups/public/documents/graphic/ll-bakeware-r-panel3.jpg" alt="">
+                                <article class="sub fullwidth bg-white-trans">
+                                    <p>Roasted Sweet Potato &amp; Pear Salad</p>
+                                    <p>made with our <strong><a href="#">Multi-Purpose Oven Tray</a></strong></p>
+                                </article>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </section>
+</div>
+<!-- CSS HERE -->
+<style type="text/css">
+.ll-ovenware-recipe .sub {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+}
+
+.ll-ovenware-recipe .bg-white-trans {
+    background-color: rgba(255, 255, 255, .6);
+}
+</style>
+<!-- Slick Snippet -->
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="slick/slick.css" />
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.multiple-items').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                arrows: true,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+        }, {
+            breakpoint: 480,
+            settings: {
+                arrows: true,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+        }]
+    });
+
+});
+</script>
+<style type="text/css">
+/*<!-- Slick Customisation --> */
+
+@media(min-width: 768px) {
+    .ll-ovenware-recipe .slider.large-arrow .slick-next {
+        font-size: 3rem;
+    }
+    .ll-ovenware-recipe .slider.large-arrow .slick-prev {
+        font-size: 3rem;
+        left: -60px;
+    }
+}
+
+.ll-ovenware-recipe .slider .slick-next,
+.ll-ovenware-recipe .slider .slick-prev {
+    position: absolute;
+    display: block;
+    top: 50%;
+    height: auto;
+    width: 30px;
+    line-height: 0;
+    font-size: 0;
+    cursor: pointer;
+    background: transparent;
+    color: transparent;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 0;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    z-index: 5;
+}
+
+.ll-ovenware-recipe .slider .slick-next:before {
+    content: '\f105';
+    text-align: right;
+}
+
+.ll-ovenware-recipe .slider .slick-next {
+    right: 0;
+}
+
+.ll-ovenware-recipe .slider .slick-prev:before {
+    content: '\f104';
+    text-align: left;
+}
+
+.ll-ovenware-recipe .slider .slick-prev {
+    left: 0;
+}
+
+.ll-ovenware-recipe .slick-initialized .slick-slide {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.ll-ovenware-recipe .multiple-items .slick-slide {
+    outline-color: white;
+}
+
+.ll-ovenware-recipe .slider.big-arrow .slick-next:before,
+.ll-ovenware-recipe .slider.big-arrow .slick-prev:before {
+    font-family: FontAwesome;
+    color: #35eded;
+    font-size: 15rem !important;
+    display: block;
+}
+
+@media(max-width: 767px) {
+    .ll-ovenware-recipe .slider.big-arrow .slick-next:before,
+    .ll-ovenware-recipe .slider.big-arrow .slick-prev:before {
+        font-size: 9rem !important;
+    }
+}
+</style>
