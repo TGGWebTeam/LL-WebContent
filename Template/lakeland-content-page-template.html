@@ -1,0 +1,64 @@
+<!-- CONTENT PAGE -->
+<div class="lklnd">
+    <section class="fullwidth">
+        <section class="page promonamehere">
+            <section class="page-banner">
+                <section class="container">
+                    <!-- content goes here -->
+                </section>
+            </section>
+            <section class="page-content">
+                <section class="container">
+                    <!-- insert contents here -->
+                </section>
+            </section>
+        </section>
+    </section>
+</div>
+<!-- CSS HERE -->
+<style type="text/css">
+/*CSS bypass*/
+
+#content .fullwidth {
+    width: 100% !important;
+}
+
+#page #contentWrapper #content {
+    max-width: 100% !important;
+}
+
+@media (max-width: 1024px) and (min-width: 601px) {
+    #page #contentWrapper #content {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media (max-width: 600px) and (min-width: 200px) {
+    div.content_wrapper,
+    #contentWrapper > #content {
+        margin: 0 auto;
+        padding: 0 !important;
+    }
+}
+
+@media (min-width: 1281px) {
+    .rowContainer > .row.margin-true {
+        padding: 0 !important;
+    }
+    .row.margin-true > div > div {
+        margin: 20px 0;
+    }
+}
+
+
+/*To ensure fullwidth edge to edge*/
+
+.rowContainer > .row.margin-true {
+    padding: 0px;
+}
+
+.row.margin-true > div > div {
+    margin: 0px;
+}
+</style>

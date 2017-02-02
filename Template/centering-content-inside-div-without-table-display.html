@@ -1,0 +1,25 @@
+<!-- To make content aligned vertically centered -->
+<div class="list-tile clearfix ca-vertical-align-nofloat">
+    <!-- the comment is needed to remove the spacing between boxes! -->
+    <div class="a col-xs-12 col-sm-6 col-md-4 col-lg-2">A</div>
+    <div class="b col-xs-12 col-sm-6 col-md-4 col-lg-2">B</div>
+    <div class="c col-xs-12 col-sm-6 col-md-4 col-lg-2">C</div>
+    <div class="d col-xs-12 col-sm-6 col-md-4 col-lg-2">D</div>
+    <div class="e col-xs-12 col-sm-6 col-md-4 col-lg-2">E</div>
+    <div class="f col-xs-12 col-sm-6 col-md-4 col-lg-2">F</div>
+</div>
+<style type="text/css">
+/*use the nofloat if child(div) elements are float*/
+
+.ca-vertical-align-nofloat > div {
+    display: inline-block;
+    float: none !important;
+    vertical-align: middle;
+}
+
+/*move the all child of the div except the first child so that it can sit side by side*/
+
+.ca-vertical-align-nofloat > div:not(first-child) {
+    margin-left: -4px;
+}
+</style>
